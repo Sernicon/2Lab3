@@ -16,10 +16,10 @@ OperationSystem::~OperationSystem()
 {
     cout << "Operation system ";
 }
-	const string OperationSystem::getarchitecture() { return architecture; }
+	const string OperationSystem::getarchitecture() const { return architecture; }
 	void OperationSystem::setarchitecture(const string architecture) { this->architecture = architecture; }
 
-const void OperationSystem::print()
+const void OperationSystem::print() const
 {
     cout << "Name: " << name << "\nType: " << type << "\nAuthor: " << author << "\nArchitecture: " << architecture << endl << endl;
 }

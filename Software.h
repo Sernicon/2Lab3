@@ -15,14 +15,14 @@ public:
 	Software(Software &s);
 	~Software();
 
-	const string getname();
+	const string getname() const;
 	void setname(const string name);
-	const string gettype();
+	const string gettype() const;
 	void settype(const string type);
-	const string getauthor();
+	const string getauthor() const;
 	void setauthor(const string author);
 
-	virtual const void print() = 0;
+	virtual const void print() const = 0;
 };
 
 #endif // SOFT_H_INCLUDED

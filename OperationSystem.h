@@ -12,10 +12,10 @@ public:
     OperationSystem(OperationSystem &o);
     ~OperationSystem();
 
-	const string getarchitecture();
+	const string getarchitecture() const;
 	void setarchitecture(const string architecture);
 
-	const void print() override;
+	const void print() const override;
 
 	OperationSystem & operator = (const OperationSystem &os);
 };

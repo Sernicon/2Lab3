@@ -16,10 +16,10 @@ DevEnviroment::~DevEnviroment()
 {
     cout << "Development environment ";
 }
-	const string DevEnviroment::getproglang() { return proglang; }
+	const string DevEnviroment::getproglang() const { return proglang; }
 	void DevEnviroment::setproglang(const string proglang) { this->proglang = proglang; }
 
-const void DevEnviroment::print()
+const void DevEnviroment::print() const
 {
     cout << "Name: " << name << "\nType: " << type << "\nAuthor: " << author << "\nProgramming language: " << proglang << endl << endl;
 }

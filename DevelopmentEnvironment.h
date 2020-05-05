@@ -12,10 +12,10 @@ public:
     DevEnviroment(DevEnviroment &d);
     ~DevEnviroment();
 
-	const string getproglang();
+	const string getproglang() const;
 	void setproglang(const string proglang);
 
-	const void print() override;
+	const void print() const override;
 
 	DevEnviroment & operator = (const DevEnviroment &de);
 };

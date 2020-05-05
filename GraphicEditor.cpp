@@ -16,10 +16,10 @@ GraphicEditor::~GraphicEditor()
 {
     cout << "Graphic editor ";
 }
-	const string GraphicEditor::getopsyst() { return opsyst; }
+	const string GraphicEditor::getopsyst() const { return opsyst; }
 	void GraphicEditor::setopsyst(const string opsyst) { this->opsyst = opsyst; }
 
-const void GraphicEditor::print()
+const void GraphicEditor::print() const
 {
     cout << "Name: " << name << "\nType: " << type << "\nAuthor: " << author << "\nOperation system: " << opsyst << endl << endl;
 }

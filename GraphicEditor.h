@@ -12,10 +12,10 @@ public:
     GraphicEditor(GraphicEditor &g);
     ~GraphicEditor();
 
-	const string getopsyst();
+	const string getopsyst() const;
 	void setopsyst(const string opsyst);
 
-	const void print() override;
+	const void print() const override;
 
 	GraphicEditor & operator = (const GraphicEditor &ge);
 };

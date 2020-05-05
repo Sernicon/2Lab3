@@ -22,9 +22,9 @@ Software::~Software()
 {
     cout << name << " by " << author << " was deleted.\n" << endl;
 }
-    const string Software::getname() { return name; }
+    const string Software::getname() const { return name; }
 	void Software::setname(const string name) { this->name = name; }
-	const string Software::gettype() { return type; }
+	const string Software::gettype() const { return type; }
 	void Software::settype(const string type) { this->type = type; }
-	const string Software::getauthor() { return author; }
+	const string Software::getauthor() const { return author; }
 	void Software::setauthor(const string author) { this->author = author; }
